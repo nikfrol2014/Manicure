@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrolovNailsNN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+        <div class="header-inner">
+            <a href="#" class="logo">
+              <img src="logo_3.jpg" alt="FrolovNailsNN">
+            </a>
+            <button class="menu-toggle">Меню</button>
+            <nav class="main-nav">
+              <ul>
+                <li><a href="#about-us">О нас</a></li>
+                <li><a href="#price-list">Прайс</a></li>
+                <li><a href="#portfolio">Портфолио</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>FrolovNailsNN</h1>
+            <p><qq>Студия маникюра и школа мастеров</qq></p>
+            <a href="zapis.html" class="button">Записаться на услугу</a>
+        </div>
+    </section>
+
+    <section class="services" id="about-us">
+        <div class="container">
+            <h2>Немного о нас</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Кто мы такие?</h3>
+                    <p><span class="highlight">Студия ногтевого сервиса «FrolovNailsNN»</span> – это команда профессионалов высокого уровня, которая может предложить Вам последние модные тренды и новинки ногтевой индустрии!</p>
+                </div>
+                <div class="service-item">
+                    <h3>Работают профессионалы</h3>
+                    <p>Наши <span class="highlight">мастера владеют самыми современными техниками.</span> В их исполнении покрытие гель-лаком держится минимум 4 недели даже на самых капризных, мягких, ломких, слоящихся ногтях.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Любой дизайн</h3>
+                    <p>С нами <span class="highlight">Вас ждет идеальный маникюр.</span> Мастера выполнят любой дизайн, который подчеркнет Ваш индивидуальный стиль и настроение.</p>
+                </div>
+                <div class="service-item">
+                    <h3>У нас есть гарантия!</h3>
+                    <p><span class="highlight">Гарантия 30 дней</span>
+                        Да-да, мы настолько уверены в качестве наших услуг, поэтому если что-то произошло с покрытием в течении месяца, то мы <span class="highlight">устраним недочеты совершенно бесплатно.</span>
+                        (Конечно, если вы не прищемили ноготь дверью и не сломали его сами)</p>
+                </div>
+                <div class="service-item">
+                    <h3>Все по ГОСТУ</h3>
+                    <p><span class="highlight">100% стерильность
+                        и безопасность</span>
+                        Инструменты проходят все этапы дезинфекции и стерилизации. Крафт-пакет вскрывается при вас. Мы используем <span class="highlight">одноразовые расходные материалы</span>, после процедуры пилочку, палочку, щёточку дарим с собой</p>
+                </div>
+                <div class="service-item">
+                    <h3>Любой цвет</h3>
+                    <p>Огромная палитра цветов
+                        <span class="highlight">В палитре более 500 оттенков.</span>
+                        И практически каждый месяц выходят новые коллекции
+                        Так что вы точно сможете подобрать оттенок на свой вкус</p>
+                </div>
+                <!-- Повторить для других услуг -->
+            </div>
+        </div>
+    </section>
+
+    <section class="price-list" id="price-list">
+        <div class="container">
+            <h2>Прайс на услуги</h2>
+
+            <div class="service-type-selector">
+                <button class="active" data-service="manicure">Маникюр</button>
+                <button data-service="pedicure">Педикюр</button>
+                <button data-service="design">Дизайн</button>
+                <button data-service="nail-extension">Наращивание и ремонт</button>
+            </div>
+
+            <div class="price-table">
+                <div class="service-content active" data-service="manicure">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Услуга</th>
+                                <th>Мастер</th>
+                                <th>Топ-мастер</th>
+                                <th>VIP-мастер</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Маникюр без покрытия/мужской маникюр</td>
+                                <td>1190</td>
+                                <td>1390</td>
+                                <td>1690</td>
+                            </tr>
+                            <tr>
+                                <td>Японский маникюр</td>
+                                <td>1590</td>
+                                <td>1790</td>
+                                <td>2090</td>
+                            </tr>
+                            <tr>
+                                <td>Маникюр + гель - лак</td>
+                                <td>1890</td>
+                                <td>2190</td>
+                                <td>2690</td>
+                            </tr>
+                            <tr>
+                                <td>Маникюр + гель-лак с простым дизайном 2-ух ногтей</td>
+                                <td>1990</td>
+                                <td>2290</td>
+                                <td>2790</td>
+                            </tr>
+                            <tr>
+                                <td>Маникюр + покрытие Luxio</td>
+                                <td>2190</td>
+                                <td>2490</td>
+                                <td>2990</td>
+                            </tr>
+                            <tr>
+                                <td>Маникюр + покрытие гель-лаком "френч"</td>
+                                <td>2390</td>
+                                <td>2690</td>
+                                <td>3190</td>
+                            </tr>
+                            <tr>
+                                <td>СПА-парафинотерапия</td>
+                                <td>350</td>
+                                <td>350</td>
+                                <td>350</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="service-content" data-service="pedicure">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Услуга</th>
+                                <th>Мастер</th>
+                                <th>Топ-мастер</th>
+                                <th>VIP-мастер</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Аппаратная обработка пальчиков ног без покрытия</td>
+                                <td>1490</td>
+                                <td>1790</td>
+                                <td>2090</td>
+                            </tr>
+                            <tr>
+                                <td>Аппаратная обработка пальчиков ног + гель-лак</td>
+                                <td>1990</td>
+                                <td>2290</td>
+                                <td>2590</td>
+                            </tr>
+                            <tr>
+                                <td>Полный аппаратный педикюр без покрытия</td>
+                                <td>1990</td>
+                                <td>2290</td>
+                                <td>2590</td>
+                            </tr>
+                            <tr>
+                                <td>Полный аппаратный педикюр + гель-лак</td>
+                                <td>2290</td>
+                                <td>2590</td>
+                                <td>2890</td>
+                            </tr>
+                            <tr>
+                                <td>Полный препаратный педикюр без покрытия</td>
+                                <td>2490</td>
+                                <td>2790</td>
+                                <td>3090</td>
+                            </tr>
+                            <tr>
+                                <td>Полный препаратный педикюр + гель-лак</td>
+                                <td>2790</td>
+                                <td>3090</td>
+                                <td>3390</td>
+                            </tr>
+                            <tr>
+                                <td>Аппаратная обработка пальчиков ног + плёнки</td>
+                                <td>2690</td>
+                                <td>2990</td>
+                                <td>3290</td>
+                            </tr>
+                            <tr>
+                                <td>Полный аппаратный педикюр + плёнки</td>
+                                <td>2990</td>
+                                <td>3290</td>
+                                <td>3590</td>
+                            </tr>
+                            <tr>
+                                <td>СПА-парафинотерапия</td>
+                                <td>350</td>
+                                <td>350</td>
+                                <td>350</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="service-content" data-service="design">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Услуга</th>
+                                <th>Мастер</th>
+                                <th>Топ-мастер</th>
+                                <th>VIP-мастер</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Стразы Swarovski шт</td>
+                                <td>20</td>
+                                <td>20</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>Простой дизайн за 1 ноготь</td>
+                                <td>от 50</td>
+                                <td>от 50</td>
+                                <td>от 50</td>
+                            </tr>
+                            <tr>
+                                <td>Сложный дизайн за 1 ноготь</td>
+                                <td>от 250</td>
+                                <td>от 250</td>
+                                <td>от 250</td>
+                            </tr>
+                            <tr>
+                                <td>Градиент (омбре) 2 цвета за 1 ноготь</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td>Покрытие "кошачий глаз" за 10 ногтей</td>
+                                <td>200</td>
+                                <td>200</td>
+                                <td>200</td>
+                            </tr>
+                            <tr>
+                                <td>Покрытие Luxio</td>
+                                <td>300</td>
+                                <td>300</td>
+                                <td>300</td>
+                            </tr>
+                            <tr>
+                                <td>Инкрустация 1 ногтя crystal pixie Swarovski</td>
+                                <td>400</td>
+                                <td>400</td>
+                                <td>400</td>
+                            </tr>
+                            <tr>
+                                <td>Градиент (омбре) 2 цвета за 10 ногтей</td>
+                                <td>500</td>
+                                <td>500</td>
+                                <td>500</td>
+                            </tr>
+                            <tr>
+                                <td>Плёнки на 1 большой палец ноги</td>
+                                <td>200</td>
+                                <td>200</td>
+                                <td>200</td>
+                            </tr>
+                            <tr>
+                                <td>Френч за 1 ноготь</td>
+                                <td>50</td>
+                                <td>50</td>
+                                <td>50</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="service-content" data-service="nail-extension">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Услуга</th>
+                                <th>Мастер</th>
+                                <th>Топ-мастер</th>
+                                <th>VIP-мастер</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Наращивание ногтя</td>
+                                <td>200</td>
+                                <td>200</td>
+                                <td>200</td>
+                            </tr>
+                            <tr>
+                                <td>Укрепление полигелем</td>
+                                <td>500</td>
+                                <td>500</td>
+                                <td>500</td>
+                            </tr>
+                            <tr>
+                                <td>Снятие нарощенных ногтей</td>
+                                <td>400</td>
+                                <td>400</td>
+                                <td>400</td>
+                            </tr>
+                            <tr>
+                                <td>Маникюр + коррекция нарощенных ногтей с однотонным покрытием гель-лаком</td>
+                                <td>3200</td>
+                                <td>3200</td>
+                                <td>3200</td>
+                            </tr>
+                            <tr>
+                                <td>Маникюр + коррекция нарощенных ногтей + френч</td>
+                                <td>3700</td>
+                                <td>3700</td>
+                                <td>3700</td>
+                            </tr>
+                            <tr>
+                                <td>Маникюр + наращивание ногтей гелем с однотонным покрытием гель-лаком</td>
+                                <td>3800</td>
+                                <td>3800</td>
+                                <td>3800</td>
+                            </tr>
+                            <tr>
+                                <td>Маникюр + наращивание ногтей гелем френч</td>
+                                <td>4300</td>
+                                <td>4300</td>
+                                <td>4300</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2>Работы наших мастеров</h2>
+            <div class="slider">
+                <div class="slider-inner">
+                    <div class="slide active"> <img src="image1.jpg" alt="Работа 1"> </div>
+                    <div class="slide"> <img src="image2.jpg" alt="Работа 2"> </div>
+                    <div class="slide"> <img src="image3.jpg" alt="Работа 3"> </div>
+                    <div class="slide"> <img src="image4.jpg" alt="Работа 4"> </div>
+                    <div class="slide"> <img src="image5.jpg" alt="Работа 5"> </div>
+                    <div class="slide"> <img src="image6.jpg" alt="Работа 6"> </div>
+                    <div class="slide"> <img src="image7.jpg" alt="Работа 7"> </div>
+                    <div class="slide"> <img src="image8.jpg" alt="Работа 8"> </div>
+                    <!-- ... можно добавить больше слайдов ... -->
+                </div>
+                <button class="slider-prev">&lt;</button>
+                <button class="slider-next">&gt;</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <a href="Rabota.html" class="button">Вакансии</a>
+            <p>Made by Frolov Nikita</p>
+            <p>&copy; 2024 FrolovNailsNN</p>
+        </div>
+    </footer>
+
+    <script src="script_1.js"></script>
+</body>
+</html>
