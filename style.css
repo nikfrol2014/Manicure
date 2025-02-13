@@ -1,0 +1,566 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgba(253, 0, 241, 0.2); /* Устанавливаем прозрачность для фона */
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+    position: fixed; /* Фиксируем header */
+    top: 0; /* Позиционируем вверху страницы */
+    width: 100%; /* Занимает всю ширину экрана */
+    z-index: 10; /*  Устанавливаем более высокий z-index для отображения поверх контента */
+    /* opacity: 0.5; */
+}
+
+.header-inner {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; /* Распределяем элементы по краям */
+    align-items: center; /* Выравниваем по вертикали */
+
+}
+
+.logo {
+    flex: 0 0 auto; /* Занимает только необходимое место */
+}
+
+.logo img {
+    opacity: 1;
+    border-radius: 50%;
+    max-height: 15%;
+    max-width: 25%;
+}
+nav ul li a { /*  Применяем стили к ссылкам в списке */
+    color: rgb(19, 18, 19);
+    font-size: 18px;
+    opacity: 1;  /* Делаем ссылки непрозрачными */
+}
+
+h1 {
+    
+    background-color: rgb(0, 0, 0, 0.3);
+    font-size: 7em;
+    color: rgb(255, 255, 255);
+}
+
+h2 {
+    font-size: 70px; /* Увеличенный размер */
+    font-weight: 100; /* Толстый вес */
+}
+
+p qq {
+    background-color: rgba(255, 255, 255, 0.452);
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.hero {
+    background-image: url("bc_gr_2.jfif");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.button {
+    font-size: 20px;
+    background-color: #ff00b3;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.services {
+    padding: 50px 0;
+    font-family: 'Roboto', sans-serif; /* Или другой шрифт sans-serif */
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.service-item {
+    background-color: #f9f9f9; /* Светло-серый фон */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Небольшая тень */
+    text-align: center;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #ce0692; 
+}
+
+.service-item p {
+    font-size: 18px; /* Увеличили размер шрифта */
+    line-height: 1.7; /* Увеличили межстрочный интервал */
+    color: #555; /* Средне-серый цвет */
+}
+
+.highlight {
+    color:#a73980; 
+    font-weight: bold; /* Жирный шрифт */
+}
+
+.portfolio {
+    padding: 50px 0;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.service-content {
+    display: none; /* Скрыты по умолчанию */
+}
+
+.service-content.active {
+    display: block; /* Показываем активную секцию */
+}
+
+.service-content table {
+    width: 100%;
+    border-collapse: collapse; /* Убираем пробелы между ячейками */
+}
+
+.service-content th, .service-content td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left; /* Выравнивание текста по левому краю */
+}
+
+.service-content th:first-child {
+    width: 250px; /* Ширина колонки "УСЛУГА" */
+    text-align: left; 
+}
+
+.service-content th:not(:first-child),
+.service-content td:not(:first-child) {
+    text-align: center; /* Выравнивание остальных колонок по центру */
+}
+
+.service-content td {
+    width: 100px; /* Ширина колонок с ценами */
+}
+
+.service-type-selector button {
+    font-size: 20px;
+    background-color: #ff00b3;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.service-type-selector button:hover {
+    background-color: #9b115d; /* Цвет фона при наведении */
+    border-color: #aaa;
+}
+
+.service-type-selector button.active {
+    background-color: #9b115d; /* Цвет фона активной кнопки */
+    border-color: #999;
+}
+
+.service-type-selector button.active:hover {
+    background-color: #700841; /* Цвет фона активной кнопки при наведении */
+}
+
+.menu-toggle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    flex: 0 0 auto; /* Важно: для предотвращения растягивания кнопки */
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 20px;
+    border-right-width: 5px;
+  }
+
+.main-nav {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  z-index: 100;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+  display: none;
+}
+  
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .main-nav li {
+    margin: 5px 0;
+  }
+  
+  .main-nav li a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+  }
+  
+  .main-nav li a:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .menu-toggle:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .menu-toggle:focus {
+    outline: none;
+  }
+  
+  .menu-toggle.active + .main-nav {
+    transform: translateY(0);
+    display: block;
+  }
+  
+  @media (min-width: 768px) {
+    .menu-toggle {
+      display: none;
+    }
+    .main-nav {
+      position: static;
+      transform: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .main-nav ul {
+      flex-direction: row;
+      list-style: none;
+    }
+    .main-nav li {
+      margin: 0 10px;
+    }
+  }
+
+/* Для больших экранов (десктопы) */
+@media (min-width: 1200px) {
+    h1 {
+      font-size: 7em;
+    }
+  }
+  
+  /* Для средних экранов (планшеты) */
+  @media (min-width: 768px) and (max-width: 1199px) {
+    h1 {
+      font-size: 5em;
+    }
+  }
+  
+  /* Для малых экранов (смартфоны) */
+  @media (max-width: 767px) {
+    .logo {
+        text-align: justify;
+        padding-left: 5px;
+    }
+    h1 {
+      font-size: 3em;
+      text-align: center; /* Центрируем заголовок на маленьких экранах */
+    }
+  }
+
+/* =====================================================================================================================================================================*/
+/* =========================================================================ПОРТФОЛИО===================================================================================*/
+/* =====================================================================================================================================================================*/
+
+.slider {
+    position: relative;
+    overflow: hidden;
+
+    /* Добавляем max-width, чтобы слайдер не занимал всю ширину страницы, а лишь доступную ширину контейнера */
+    max-width: 800px; /* Или другое значение по моему усмотрению */
+    margin: 0 auto;
+    height: 600px; /* Добавлена высота */
+}
+
+.slider-inner {
+    position: relative; /* Важно для позиционирования слайдов */
+    min-height: 100%; /* Важно! */
+}
+
+.slide {
+    position: absolute; /* Важно для позиционирования слайдов */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.slide.active {
+    opacity: 1; /* Показываем активный слайд */
+}
+
+.slide img {
+    display: block;
+    max-width: 600px;
+    max-height: 600px;
+    margin: 0 auto;
+}
+
+
+.slider-prev, .slider-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.slider-prev {
+    left: 10px;
+}
+
+.slider-next {
+    right: 10px;
+}
+
+
+/* ======================================================================================================================================================================= */
+/* ===========================================================================для страницы запись========================================================================= */
+/* ======================================================================================================================================================================= */
+/* ======================================================================================================================================================================= */
+
+
+
+/* Стили для секции формы записи */
+.hero_zapis {
+    background-image: url("bc_gr_2.jfif");
+    padding: 50px 0; /* Отступ сверху и снизу */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+.hero_zapis h2 {
+    font-size: 36px; /* Размер шрифта заголовка */
+    margin-bottom: 30px; /* Отступ снизу от заголовка */
+    color: #333; /* Цвет заголовка (темно-серый) */
+}
+
+.hero_zapis .container {
+    background-color: #aaa;
+    border-radius: 5%;
+    max-width: 600px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Автоматические отступы слева и справа для центрирования */
+}
+
+/* Стили для группы элементов формы */
+.hero_zapis .form-group {
+    margin-bottom: 20px; /* Отступ снизу от группы элементов */
+}
+
+.hero_zapis label {
+    display: block; /* Элемент занимает всю ширину строки */
+    margin-bottom: 5px; /* Отступ снизу от подписи */
+    font-weight: bold; /* Жирный шрифт для подписей */
+    color: #0f0d0d; /* Цвет подписей (серый) */
+}
+
+.hero_zapis input[type="text"],
+.hero_zapis input[type="tel"],
+.hero_zapis input[type="date"],
+.hero_zapis input[type="time"],
+.hero_zapis select,
+.hero_zapis textarea {
+    width: 100%; /* Ширина на всю ширину контейнера */
+    padding: 10px; /* Отступ внутри поля */
+    border: 1px solid #ccc; /* Тонкая серая рамка */
+    border-radius: 5px; /* Скругленные углы */
+    box-sizing: border-box; /* Размер включает padding и border */
+}
+
+.hero_zapis textarea {
+    height: 100px; /* Высота текстового поля */
+}
+
+/* Стили для кнопки отправки */
+.hero_zapis .button {
+    display: block; /* Элемент занимает всю ширину строки */
+    width: 100%;
+    padding: 15px 20px; /* Отступ внутри кнопки */
+    background-color: #ff00b3; 
+    color: #fff; /* Цвет текста кнопки (белый) */
+    border: none; /* Без рамки */
+    border-radius: 5px; /* Скругленные углы */
+    cursor: pointer; /* Курсор в виде указателя */
+    transition: background-color 0.3s ease; /* Плавный переход цвета при наведении */
+}
+
+.hero_zapis .button:hover {
+    background-color: #9b115d;
+}
+
+.back-button {
+  display: block; /* Размещаем кнопку на отдельной строке */
+  margin-top: 20px; /* Отступ сверху */
+  padding: 10px 20px;
+  background-color: #e231bcb6; 
+  color: #fff; /* Темно-серый текст */
+  text-decoration: none; /* Убираем подчеркивание */
+  border-radius: 5px; /* Скругленные углы */
+  transition: background-color 0.3s ease; /* Плавный переход при наведении */
+
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.back-button:hover {
+  background-color: #9b115d; 
+}
+
+/* Адаптивные стили */
+@media (max-width: 576px) {
+    .hero_zapis .container {
+        max-width: 100%; /* Максимальная ширина на маленьких экранах */
+        padding: 0 15px; /* Отступ слева и справа на маленьких экранах */
+    }
+}
+
+
+
+/* ======================================================================================================================================================================= */
+/* ===========================================================================для страницы РАБОТА========================================================================= */
+/* ======================================================================================================================================================================= */
+/* ======================================================================================================================================================================= */
+
+.hero_job { /* Стили для страницы вакансий */
+    background-image: url("bc_gr_2.jfif");
+    background-size: cover;
+    background-position: center;
+    color: #333; /* Темный текст на фоне */
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero_job .container {
+    font-family: 'Roboto', sans-serif;
+
+    padding: 20px 15px 200px 15px;
+
+    background-color: #fff; /* Белый фон контейнера */
+
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Добавим небольшую тень */
+}
+
+.hero_job .container .back-button {
+    background-color: #555;
+    display: block; /* Размещаем кнопку на отдельной строке */
+  margin-top: 20px; /* Отступ сверху */
+  padding: 10px 20px;
+
+  color: #fff; /* Темно-серый текст */
+  text-decoration: none; /* Убираем подчеркивание */
+  border-radius: 5px; /* Скругленные углы */
+  transition: background-color 0.3s ease; /* Плавный переход при наведении */
+
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.hero_job .container .back-button:hover{
+    background-color: #3d3d3d;
+}
+
+.hero_job h1 {
+    font-size: 3em; /* Размер заголовка */
+    margin-bottom: 20px;
+}
+
+.hero_job .block {
+    margin-bottom: 20px;
+
+}
+
+.hero_job h2 {
+    margin-top: 0;
+    font-size: 30px;
+}
+
+.hero_job ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.hero_job a {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.hero_job a:hover {
+  text-decoration: none;
+}

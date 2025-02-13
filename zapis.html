@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="hero_zapis">       
+        <div class="container">
+            <h2>Запись на услугу</h2>
+            <form action="#" method="post">  <!-- action="#" -  нужно заменить на обработчик формы -->
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Ваш телефон:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Дата:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Время:</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Услуга:</label>
+                    <select id="service" name="service" required>
+                        <option value="">Выберите услугу</option>
+                        <option value="manicure">Маникюр</option>
+                        <option value="pedicure">Педикюр</option>
+                        <option value="design">Дизайн</option>
+                        <option value="nail-extension">Наращивание и ремонт</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Сообщение (необязательно):</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                <button type="submit" class="button">Отправить заявку</button>
+                <a href="main.html" class="back-button">Вернуться на главную</a>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Made by Frolov Nikita</p>
+            <p>&copy; 2024 FrolovNailsNN</p>
+        </div>
+    </footer>
+
+    <script src="script_1.js"></script> </body>
+</html>
